@@ -1,8 +1,27 @@
-[gd_scene load_steps=2 format=3 uid="uid://b63y5em8yo6yy"]
+[gd_scene load_steps=4 format=3 uid="uid://b63y5em8yo6yy"]
 
 [ext_resource type="PackedScene" uid="uid://r3grro0ypqfs" path="res://player.tscn" id="1_jg0dc"]
+[ext_resource type="Script" uid="uid://3vuhbom2kwda" path="res://area_2d_door2.gd" id="2_nmjpi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xdadj"]
 
 [node name="Level2" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_jg0dc")]
-position = Vector2(176, 63)
+position = Vector2(44, 116)
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("2_nmjpi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(10, 125)
+shape = SubResource("RectangleShape2D_xdadj")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 4.0
+offset_top = 112.0
+offset_right = 19.0
+offset_bottom = 135.0
+text = "1"
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
