@@ -55,9 +55,11 @@ sources/0 = SubResource("TileSetAtlasSource_j7kpp")
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bjebc"]
 texture = ExtResource("4_j7kpp")
 0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 3)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.1152, 4.85619, -8, 1.97845, -8, -4.31661, 8, -4.31661, 8, 1.97845, 5.93534, 5.03605)
 1:0/0 = 0
-1:0/0/texture_origin = Vector2i(0, 5)
-1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.1152, 3.77703, -5.03605, 8, 4.85619, 8, 5.75548, 3.41731, 5.57562, -1.25901, -5.93534, -1.25901)
+1:0/0/texture_origin = Vector2i(6, -3)
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12.4103, 3.95689, -10.9714, 7.91378, -1.07915, 8, 0, 3.95689, 0, 1.43887, -12.4103, 1.43887)
 8:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
@@ -82,7 +84,7 @@ texture = ExtResource("4_j7kpp")
 4:0/0 = 0
 4:0/0/texture_origin = Vector2i(0, -2)
 4:0/0/y_sort_origin = 18
-4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.0258, 17.3101, -14.9283, 1.07915, 15.1081, 1.25901, 14.9243, 17.6147, 10.6117, 20.2341, -10.8632, 20.0513)
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.0258, 17.3101, -15.1081, 0.539576, 14.7484, 0.719435, 14.9243, 17.6147, 10.6117, 20.2341, -10.8632, 20.0513)
 
 [sub_resource type="TileSet" id="TileSet_5rr72"]
 physics_layer_0/collision_layer = 1
@@ -105,7 +107,7 @@ tile_set = SubResource("TileSet_bjebc")
 [node name="TileMapLayerFurniture" type="TileMapLayer" parent="."]
 z_index = 1
 y_sort_enabled = true
-tile_map_data = PackedByteArray("AAABAAIAAAACAAAAAAAEAAQAAAAEAAAAAAAFAAEAAAAGAAAAAAAHAAEAAAAJAAAAAAABAAQAAAABAAAAAAA=")
+tile_map_data = PackedByteArray("AAABAAIAAAACAAAAAAAEAAQAAAAEAAAAAAAFAAEAAAAGAAAAAAAHAAEAAAAJAAAAAAAGAAMAAAABAAAAAAABAAQAAAAAAAAAAAA=")
 tile_set = SubResource("TileSet_5rr72")
 
 [node name="Player" parent="." instance=ExtResource("1_3hls8")]
