@@ -58,7 +58,7 @@ texture = ExtResource("4_j7kpp")
 0:0/0/texture_origin = Vector2i(0, 3)
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.1152, 4.85619, -8, 1.97845, -8, -4.31661, 8, -4.31661, 8, 1.97845, 5.93534, 5.03605)
 1:0/0 = 0
-1:0/0/texture_origin = Vector2i(6, -3)
+1:0/0/texture_origin = Vector2i(4, -3)
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12.4103, 3.95689, -10.9714, 7.91378, -1.07915, 8, 0, 3.95689, 0, 1.43887, -12.4103, 1.43887)
 8:0/0 = 0
 0:1/0 = 0
@@ -107,7 +107,7 @@ tile_set = SubResource("TileSet_bjebc")
 [node name="TileMapLayerFurniture" type="TileMapLayer" parent="."]
 z_index = 1
 y_sort_enabled = true
-tile_map_data = PackedByteArray("AAABAAIAAAACAAAAAAAEAAQAAAAEAAAAAAAFAAEAAAAGAAAAAAAHAAEAAAAJAAAAAAAGAAMAAAABAAAAAAABAAQAAAAAAAAAAAA=")
+tile_map_data = PackedByteArray("AAABAAIAAAACAAAAAAAEAAQAAAAEAAAAAAAFAAEAAAAGAAAAAAAHAAEAAAAJAAAAAAABAAQAAAAAAAAAAAAGAAMAAAABAAAAAAA=")
 tile_set = SubResource("TileSet_5rr72")
 
 [node name="Player" parent="." instance=ExtResource("1_3hls8")]
