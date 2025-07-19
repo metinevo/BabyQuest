@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlypv5hho31y"]
+
+[ext_resource type="Script" uid="uid://cg46fvmxdafsf" path="res://canvas_layer_cell_phone.gd" id="1_m11h5"]
+
+[node name="CanvasLayer_CellPhone" type="CanvasLayer"]
+script = ExtResource("1_m11h5")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+columns = 4
+
+[node name="Label" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "phone"
+
+[node name="Label2" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "icon"
+
+[node name="Label3" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "hello"
+
+[node name="Label4" type="Label" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "icon"
+
+[node name="Label5" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "blank"
