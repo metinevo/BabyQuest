@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://d042vvtbkx2yk"]
+[gd_scene load_steps=24 format=4 uid="uid://d042vvtbkx2yk"]
 
 [ext_resource type="PackedScene" uid="uid://r3grro0ypqfs" path="res://player.tscn" id="1_3hls8"]
 [ext_resource type="Script" uid="uid://3a414rfc1k0h" path="res://level_1.gd" id="1_ihfcg"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://djv15jsjiyxe1" path="res://art/bedroom.png" id="4_j7kpp"]
 [ext_resource type="Texture2D" uid="uid://dgxq6a4iw3jkb" path="res://art/cover_bathroom.png" id="5_1pe0h"]
 [ext_resource type="Texture2D" uid="uid://emxcyneibkyq" path="res://art/bathroom.png" id="7_27bay"]
+[ext_resource type="Texture2D" uid="uid://bgb0ngemy30q6" path="res://art/walls.png" id="8_1pe0h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5hph3"]
 texture = ExtResource("2_rka8t")
@@ -139,6 +140,30 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_bjebc")
 sources/1 = SubResource("TileSetAtlasSource_ubhxj")
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_27bay"]
+texture = ExtResource("8_1pe0h")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -3.50725, -8, -3.32739, 8, -8, 8)
+6:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_sof0w"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_27bay")
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hn12h"]
 
 [node name="Level1" type="Node2D"]
@@ -159,6 +184,11 @@ y_sort_enabled = true
 position = Vector2(-1, 0)
 tile_map_data = PackedByteArray("AAABAAIAAAACAAAAAAAEAAQAAAAEAAAAAAAFAAEAAAAGAAAAAAAHAAEAAAAJAAAAAAAGAAMAAAABAAAAAAABAAQAAAAAAAAAAAAJAAIAAQAAAAAAAAANAAIAAQABAAAAAAALAAIAAQAFAAAAAAAPAAIAAQAGAAAAAAA=")
 tile_set = SubResource("TileSet_5rr72")
+
+[node name="TileMapLayerWalls" type="TileMapLayer" parent="."]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAAIAAEAAAAFAAAAAAAIAAIAAAAFAAAAAAAIAAMAAAAFAAAAAAAIAAYAAAAFAAAAAAARAAEAAAAFAAAAAAARAAIAAAAFAAAAAAARAAMAAAAFAAAAAAARAAQAAAAFAAAAAAARAAUAAAAFAAAAAAARAAYAAAAFAAAAAAARAAcAAAAFAAAAAAARAAAAAAAEAAAAAAA=")
+tile_set = SubResource("TileSet_sof0w")
 
 [node name="Player" parent="." instance=ExtResource("1_3hls8")]
 position = Vector2(38, 69)
