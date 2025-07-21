@@ -3,10 +3,6 @@ extends CharacterBody2D
 var speed: int = 35
 @onready var animations = $AnimationPlayer
 
-func _ready():
-	velocity.x = 74
-	velocity.y = 178
-
 func handleInput():
 	var moveDirection = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	velocity = moveDirection * speed
