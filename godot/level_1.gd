@@ -7,7 +7,7 @@ func _ready():
 	#phone.close()
 	if Globals.get_first_run():
 		Globals.set_first_run(false)
-		player.global_position = Vector2(39, 69)
+		player.global_position = Vector2(25, 54)
 	else:
 		player.global_position = Vector2(74, 178)
 	
