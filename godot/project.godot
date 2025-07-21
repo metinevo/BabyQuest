@@ -21,10 +21,10 @@ Globals="*res://globals.gd"
 
 [display]
 
-window/size/viewport_width=400
-window/size/viewport_height=200
-window/size/window_width_override=1500
-window/size/window_height_override=750
+window/size/viewport_width=250
+window/size/viewport_height=125
+window/size/window_width_override=1000
+window/size/window_height_override=500
 window/stretch/mode="canvas_items"
 
 [input]
