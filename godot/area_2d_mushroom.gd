@@ -1,16 +1,17 @@
 extends Area2D
 
+var id_
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+#func _process(delta: float) -> void:
+	#pass
 
-func x():
-	get_tree().change_scene_to_file("res://level_2.tscn")
-	
 func _on_body_entered(_body: Node2D) -> void:
-	# if body.class = player
-	call_deferred("x")
+	Globals.delete_mushroom(id_)
+	queue_free()
+
+func set_id(id):
+	id_ = id
